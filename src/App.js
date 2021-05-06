@@ -12,6 +12,7 @@ function App() {
             <th>Type</th>
           </tr>
         </thead>
+
         <tbody>
           {pokemon.slice(0, 20).map((pokemon) => ( //slice incoming array to first 20 entries, then map over and format each item recieved
             <tr key={pokemon.id}>
@@ -20,6 +21,7 @@ function App() {
             </tr>
           ))}
         </tbody>
+        
       </table>
     </div>
   );
